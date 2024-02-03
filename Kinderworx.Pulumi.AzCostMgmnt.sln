@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kinderworx.Pulumi.AzCostMgmnt", "Kinderworx.Pulumi.AzCostMgmnt.csproj", "{3BC94D68-5079-4838-8A5E-6B82A141FC98}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "build\_build.csproj", "{206A7C0B-529A-4CF4-A537-438E9DB136BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kinderworx.Pulumi.AzCostMgmnt.Tests", "..\Kinderworx.Pulumi.AzCostMgmnt.Tests\Kinderworx.Pulumi.AzCostMgmnt.Tests.csproj", "{607CBC29-F415-4834-95B2-01EF1EC2835C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BC94D68-5079-4838-8A5E-6B82A141FC98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BC94D68-5079-4838-8A5E-6B82A141FC98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BC94D68-5079-4838-8A5E-6B82A141FC98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BC94D68-5079-4838-8A5E-6B82A141FC98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{206A7C0B-529A-4CF4-A537-438E9DB136BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{206A7C0B-529A-4CF4-A537-438E9DB136BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{206A7C0B-529A-4CF4-A537-438E9DB136BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{206A7C0B-529A-4CF4-A537-438E9DB136BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{607CBC29-F415-4834-95B2-01EF1EC2835C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{607CBC29-F415-4834-95B2-01EF1EC2835C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{607CBC29-F415-4834-95B2-01EF1EC2835C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{607CBC29-F415-4834-95B2-01EF1EC2835C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4CEAB9FF-7050-47A7-89A3-5FA173E92D5B}
+	EndGlobalSection
+	GlobalSection(NDepend) = preSolution
+		Project = ".\Kinderworx.Pulumi.AzCostMgmnt.ndproj"
+	EndGlobalSection
+EndGlobal
