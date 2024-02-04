@@ -28,4 +28,12 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="NewFolder\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include=".cm\gitstream.cm" />
+  </ItemGroup>
+
 </Project>

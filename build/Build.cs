@@ -540,12 +540,12 @@ class Build : NukeBuild
             if (IsLocalBuild)
             {
                 DTrackAudit(
-                    @$"-a -k {DTrackApiKey2} -n {BuildUtils.Helper(projectName)} -u {DependencyTrackUrl} -v {OctopusVersion} -i {sbomPath}");
+                    @$"-a -k {DTrackApiKey2} -n {BuildUtils.ReplaceDotsToDashes(projectName)} -u {DependencyTrackUrl} -v {OctopusVersion} -i {sbomPath}");
             }
 
             else if (IsServerBuild)
                 DTrackAudit(
-                    @$"run main.go -ApiPath -k {DTrackApiKey2} -n {BuildUtils.Helper(projectName)} -u {DependencyTrackUrl} -v {CloudBuildNo} -i {sbomPath}",
+                    @$"run main.go -ApiPath -k {DTrackApiKey2} -n {BuildUtils.ReplaceDotsToDashes(projectName)} -u {DependencyTrackUrl} -v {CloudBuildNo} -i {sbomPath}",
                     RootDirectory);
         });
 
@@ -584,7 +584,7 @@ class Build : NukeBuild
         .Executes(() =>
         {
             SonarscannerTool(
-                @$"begin /k:{BuildUtils.Helper(projectName)}  /d:sonar.host.url={SonarqubeUrl} /d:sonar.token={SonarKey}");
+                @$"begin /k:{BuildUtils.ReplaceDotsToDashes(projectName)}  /d:sonar.host.url={SonarqubeUrl} /d:sonar.token={SonarKey}");
         });
 
 
