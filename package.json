@@ -11,5 +11,8 @@
     "readme-md": "^0.13.1",
     "remark-lint": "^9.1.2",
     "write-good": "^1.0.8"
+  },
+  "scripts": {
+    "prepare": "husky"
   }
 }
