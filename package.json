@@ -14,5 +14,16 @@
   },
   "scripts": {
     "prepare": "husky"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "",
+      "pre-push": ""
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-emoji"
+    }
   }
 }
