@@ -4,7 +4,6 @@ using System.IO;
 using System.IO.Compression;
 using System.Linq;
 using System.Text;
-using _build;
 using CliWrap;
 using CliWrap.Buffered;
 using Flurl.Http;
@@ -36,6 +35,7 @@ class Build : NukeBuild
     readonly NerdbankGitVersioning NerdbankVersioning;
 
     #region Test  Properties
+
     public string CodeCoverage = "true";
 
     public string coverageFormat = "opencover";
@@ -45,15 +45,15 @@ class Build : NukeBuild
 
     #region Pulumi
 
-    string Project = "";
+    string Project = "Kinderworx.Pulumi.AzCostMgmnt";
 
-    string PulumiUrl = "";
+    string PulumiUrl = "https://api.pulumi.com/api/";
 
-    string Organisation = "";
+    string Organisation = "GurdipS5";
 
-    string Stack = "";
+    string[] Stack =  {"Dev", "", "" };
 
-    string Deployment = "";
+string Deployment = "";
 
     /// <summary>
     /// Pulumi project path.
@@ -242,7 +242,7 @@ class Build : NukeBuild
     /// <summary>
     ///
     /// </summary>
-    [Secret]
+    [Parameter] [Secret]
     readonly string CODECOV_SECRET;
 
     /// <summary>
@@ -254,17 +254,17 @@ class Build : NukeBuild
     /// <summary>
     /// s
     /// </summary>
-    [Secret] readonly string SonarKey;
+    [Parameter][Secret] readonly string SonarKey;
 
     /// <summary>
     ///
     /// </summary>
-    [Secret] readonly string GitHubToken;
+    [Parameter][Secret] readonly string GitHubToken;
 
     /// <summary>
     /// Sny API Token.
     /// </summary>
-    [Secret]
+    [Parameter] [Secret]
     readonly string SNYK_TOKEN;
 
 
